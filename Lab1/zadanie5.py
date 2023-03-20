@@ -3,7 +3,7 @@ import numpy as np
 n = int(input("Podaj ilość wierszy tablicy:"))
 m = int(input("Podaj ilość kolumn tablicy:"))
 
-# Tworzenie dwuwymiarowej tablicy o wymiarach n x m oraz wypełnienie jej losowymi liczbami z przedziału 0-10
+# Tworzenie dwuwymiarowej tablicy o wymiarach n x m oraz wypełnienie jej losowymi liczbami z przedziału 0-10 (przykładowe dane)
 T = np.random.randint(10,size=(n,m))
 
 print("Tablica przed zamianą")
@@ -22,5 +22,6 @@ for i in range(n):
 print("Tablica po zamianie")
 print(T)
 
+#Wypisywanie minimum w wierszu
 for k in range(n):
  print(f"Mininum w wierszu {k} wynosi {T[k][0]}")

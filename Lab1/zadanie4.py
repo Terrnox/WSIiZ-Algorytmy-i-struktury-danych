@@ -4,7 +4,7 @@ T = []
 
 n = int(input("Podaj wielkość tablicy:"))
 
-# Wypełnianie tablicy losowymi danymi liczbowymi z przedziału 1-11
+# Wypełnianie tablicy losowymi danymi liczbowymi z przedziału 1-11 (Przykładowe dane)
 for j in range(n):
     T.append(r.randint(1,11))
 

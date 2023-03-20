@@ -1,18 +1,10 @@
 import random as r
 
-#Funkcja wypisz
-def wypisz(T_ind):
-    dl = len(T_ind)
-    wypisanie = ""
-    for i in range(dl):
-        wypisanie = wypisanie + str(i) + ','
-    print(f"Szukana wartość występuje na pozycjach {wypisanie}")
-
 T = []
 
 N = int(input("Podaj wielkość tablicy:"))
 
-# Wypełnianie tablicy losowymi danymi liczbowymi z przedziału 1-11
+# Wypełnianie tablicy losowymi danymi liczbowymi z przedziału 1-11 (przykładowe dane)
 for j in range(N):
     T.append(r.randint(1,11))
 
@@ -34,4 +26,4 @@ for i in range(N):
 if licznik_wys == 0:
     print("Szukana wartość nie występuje w tablicy")
 else:
-    wypisz(T_ind)
+    print(T_ind)
