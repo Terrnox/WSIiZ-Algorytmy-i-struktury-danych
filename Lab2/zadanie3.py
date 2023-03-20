@@ -1,4 +1,4 @@
-T = []
+T = [1, 2, 3, 11, 21, 111, 231] #Przykładowe dane
 n = len(T)
 j = n-1
 while j >= 0:
@@ -15,11 +15,8 @@ while j >= 0:
             elif int(lancuch_liczba1[k]) > int(lancuch_liczba2[k]):
                 tmp = T[i]
                 T[i] = T[i+1]
-                print("tmp ",tmp)
-                print("T+1 ", T[i + 1])
                 T[i+1] = tmp
                 break
-        print(T)
         i+=1
     j-=1
 
