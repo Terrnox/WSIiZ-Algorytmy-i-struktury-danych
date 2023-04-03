@@ -10,7 +10,10 @@ def maks(T, lewy, prawy, maksimum):
         srodek = (lewy + prawy) // 2
         maksimum1 = maks(T, lewy, srodek, maksimum)
         maksimum2 = maks(T, srodek+1, prawy, maksimum)
-        return max(maksimum1, maksimum2)
+        if maksimum1 > maksimum2:
+            return maksimum1
+        else
+            return maksimum2
 
 T = [9,0,6,65,17,6,8,19] #Przykładowy wektor
 l = 0 #lewy indeks
