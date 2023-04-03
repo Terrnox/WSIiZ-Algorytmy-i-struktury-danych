@@ -12,7 +12,7 @@ def maks(T, lewy, prawy, maksimum):
         maksimum2 = maks(T, srodek+1, prawy, maksimum)
         if maksimum1 > maksimum2:
             return maksimum1
-        else
+        else:
             return maksimum2
 
 T = [9,0,6,65,17,6,8,19] #Przykładowy wektor
