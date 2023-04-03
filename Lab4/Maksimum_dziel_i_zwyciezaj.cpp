@@ -10,21 +10,35 @@ int maks(int T[], int lewy, int prawy, int maksimum)
     }
     else if ((lewy + 1) == prawy)
     {
-        return max(T[lewy], T[prawy]);
+        if (T[lewy] > T[prawy])
+        {
+            return T[lewy];
+        }
+        else
+        {
+            return T[prawy];
+        }
     }
     else
     {
         int srodek = (lewy + prawy) / 2;
         int maksimum1 = maks(T, lewy, srodek, maksimum);
         int maksimum2 = maks(T, srodek + 1, prawy, maksimum);
-        return max(maksimum1, maksimum2);
+        if (maksimum1 > maksimum2)
+        {
+            return maksimum1;
+        }
+        else
+        {
+            return maksimum2;
+        }
     }
 }
 
 
 int main()
 {
-    int T[8] = {9, 0, 6, 7, 17, 6, 8, 19}; //Przykładowy wektor
+    int T[8] = {9, 0, 6, 7, 17, 26, 8, 19}; //Przykładowy wektor
     int l = 0;   //lewy indeks
     int p = size(T); //prawy indeks
     int maksi = T[0]; //pierwsze maksimum
