@@ -8,7 +8,7 @@ def zabawaWZiemniaka(uczestnicy,liczbaOperacji):
     while kolejka.size() > 1:
         for i in range(liczbaOperacji):
             kolejka.enqueue(kolejka.denqueue())
-        return kolejka.denqueue()
+        kolejka.denqueue()
 
     return kolejka.denqueue()
 
